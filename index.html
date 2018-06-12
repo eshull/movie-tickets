@@ -18,27 +18,63 @@
       <div class="row">
         <div class="col">
           <img class="img-fluid" src="img/batman.jpg" alt="batman">
+          <div class="batmanInfo">
+            <h2>Batman Returns</h2>
+            <label for="12">12:00</label>
+            <input type="radio" name="batman" value="12">
+            <label for="3">3:00</label>
+            <input type="radio" name="batman" value="15">
+            <label for="6">6:00</label>
+            <input type="radio" name="batman" value="18">
+          </div>
         </div>
         <div class="col">
           <img class="img-fluid" src="img/wonderwoman.jpg" alt="wonderwoman">
+          <div class="womanInfo">
+            <h2>Wonder Woman</h2>
+            <label for="12">1:00</label>
+            <input type="radio" name="wonderwoman" value="13">
+            <label for="3">3:00</label>
+            <input id="womanChecked" type="radio" name="wonderwoman" value="15">
+            <label for="6">6:00</label>
+            <input type="radio" name="wonderwoman" value="18">
+          </div>
         </div>
         <div class="col">
           <img class="img-fluid"src="img/superman.jpg" alt="superman">
+          <div class="supermanInfo">
+            <h2>Superman Dies</h2>
+            <label for="12">12:00</label>
+            <input type="radio" name="superman" value="12">
+            <label for="3">3:00</label>
+            <input type="radio" name="superman" value="15">
+            <label for="6">6:00</label>
+            <input type="radio" name="superman" value="18">
+          </div>
         </div>
         </div>
         <div class="row">
-          <label for="movie">Movie:</label>
+          <div class="col">
+            <label for="">Are you 65 or older?</label>
+            <input id="age" type="radio" name="age" value="true">
+            <label for="">Are you younger than 65?</label>
+            <input id="age" type="radio" name="age" value="false" checked="checked">
+            <button type="submit" name="button">Purchase</button>
+          </div>
+          <!-- <label for="movie">Movie:</label>
           <input id="movie" type="text" name="" value="">
           <label for="time">Time:</label>
           <input id="time" type="text" name="" value="">
           <label for="age">Age:</label>
-          <input id="age" type="text" name="" value="">
-          <button type="submit" name="button">Purchase</button>
+          <input id="age" type="text" name="" value=""> -->
+
         </div>
 
         </form>
-        <div id="output">
-
+        <div id="empty">
+          <p id="titleOfMovie"></p>
+          <p id="timeOfMovie"></p>
+          <p id="priceOfMovie"></p>
         </div>
 
 
