@@ -14,8 +14,19 @@
   <body>
     <h1>Epicodus Movies</h1>
     <div class="container">
+      <form id="ticketForm" action="index.html" method="post">
       <div class="row">
-        <form id="ticketForm" action="index.html" method="post">
+        <div class="col">
+          <img class="img-fluid" src="img/batman.jpg" alt="batman">
+        </div>
+        <div class="col">
+          <img class="img-fluid" src="img/wonderwoman.jpg" alt="wonderwoman">
+        </div>
+        <div class="col">
+          <img class="img-fluid"src="img/superman.jpg" alt="superman">
+        </div>
+        </div>
+        <div class="row">
           <label for="movie">Movie:</label>
           <input id="movie" type="text" name="" value="">
           <label for="time">Time:</label>
@@ -23,11 +34,13 @@
           <label for="age">Age:</label>
           <input id="age" type="text" name="" value="">
           <button type="submit" name="button">Purchase</button>
+        </div>
+
         </form>
         <div id="output">
 
         </div>
-      </div>
+
 
     </div>
   </body>
